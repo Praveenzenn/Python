@@ -1,6 +1,6 @@
-## GitHub Actions Pipeline
+## "GitHub Actions Pipeline
 
-## Super-Linter Job
+# Super-Linter Job
 
 We have set up a GitHub Actions workflow called Super-Linter that automatically checks the codebase for linting issues whenever a push is made to the repository's main branch.
 
