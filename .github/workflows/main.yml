@@ -25,10 +25,9 @@ jobs:
       
     - name: Notify on failure
       if: failure()
-      uses: .github/actions/slack@v3
-      with:
-        status: failure
-        text: "Build failed for branch ${{ github.ref }} of ${{ github.repository }}."
+      run: |
+          echo "Build failed for branch ${{ github.ref }} of ${{ github.repository }}." 
+          # You can add further steps here to notify via email, Slack, or other means.
 
     - name: Cache dependencies
       uses: actions/cache@v2
