@@ -25,7 +25,7 @@ jobs:
       
     - name: Notify on failure
       if: failure()
-      uses: actions/slack@v3
+      uses: .github/actions/slack@v3
       with:
         status: failure
         text: "Build failed for branch ${{ github.ref }} of ${{ github.repository }}."
